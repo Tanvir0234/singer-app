@@ -1,4 +1,5 @@
 import React from 'react';
+import './Cart.css'
 
 const Cart = (props) => {
 
@@ -15,13 +16,13 @@ for(let singer of cart){
 }
 
     
-    console.log(props)
-
+  
     return (
         
-    <div class="card-body border">
-        <h5 class="card-title">Add Singers : {singerQunatity}</h5>
-         <h5 class="card-text">Total payment : {totalPayment}Taka </h5> 
+    <div className="card-body mt-3 border cart">
+        <h5 className="card-title">Add Singers : {singerQunatity}</h5>
+        
+         <h5 className="card-text">Total payment : {totalPayment}Taka </h5> 
     </div>
     
     );

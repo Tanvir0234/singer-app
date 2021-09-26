@@ -1,7 +1,8 @@
 .header-title{
-    background: #d3d3d3;
+    background: #8e8d8a;
     line-height: 50px;
     text-align: center;
+    color: white;
 }
 .header-title h1{
  padding: 20px;

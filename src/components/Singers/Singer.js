@@ -1,24 +1,29 @@
 import React from 'react';
 import './Singer.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCartPlus,faLiraSign } from '@fortawesome/free-solid-svg-icons'
 
+const cartIcon = <FontAwesomeIcon icon={faCartPlus} />
+const moneyIcon = <FontAwesomeIcon icon={faLiraSign} />
 
 const Singer = (props) => {
     const {img,Name,role,salary,age,homeTown}=props.singer;
+    
     return (
     
-    <div class="card col-md-4 single-card">
-         <img src={img} class="card-img-top product-img" alt="..."/>
-    <div class="card-body">
-        <h5 class="card-title">Name: {Name}</h5>
-         <p class="card-text">Age : {age}</p>
+    <div className="card col-md-4 mt-5 single-card">
+         <img src={img} className="card-img-top mt-3 product-img" alt="..."/>
+    <div className="card-body">
+        <h5 className="card-title">Name: {Name}</h5>
+         <p className="card-text">Age : {age}</p>
          <p>Home Town : {homeTown}</p>
         <p>Role : {role}</p> 
-        <p>Salary : {salary}</p> 
+        <p>Salary : {moneyIcon} {salary}</p> 
     </div>
-    <div class="card-footer">
+    <div className="mb-3 ms-3">
       <button 
       onClick = {()=>props.handleAddToCart(props.singer)}
-      className="btn btn-primary">add to cart</button>
+      className="btn cart-btn">{cartIcon} add to cart</button>
     </div>
             
    </div>

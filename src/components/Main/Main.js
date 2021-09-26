@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import './Main.css'
 import Cart from '../Cart/Cart';
 import Singer from '../Singers/Singer';
 
@@ -19,10 +20,10 @@ const Main = () => {
         setCart(newCart);
     }
 
-console.log(cart)
+
 
     return (
-        <section className="container mt-5">
+        <section className="container mt-5 main">
             <div className="row ">
 
                 <div className="col-md-9">
