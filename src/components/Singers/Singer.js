@@ -11,14 +11,14 @@ const Singer = (props) => {
     
     return (
     
-    <div className="card col-md-4 mt-5 single-card">
+    <div className="card col-md-4 mb-4 mt-5 single-card">
          <img src={img} className="card-img-top mt-3 product-img" alt="..."/>
     <div className="card-body">
-        <h5 className="card-title">Name: {Name}</h5>
+        <h5 className="card-title fw-bold">Name: {Name}</h5>
          <p className="card-text">Age : {age}</p>
          <p>Home Town : {homeTown}</p>
         <p>Role : {role}</p> 
-        <p>Salary : {moneyIcon} {salary}</p> 
+        <p> Salary : {moneyIcon} {salary}</p> 
     </div>
     <div className="mb-3 ms-3">
       <button 

@@ -23,13 +23,14 @@ const Main = () => {
 
 
     return (
-        <section className="container mt-5 main">
+        <section className="container  mt-5 main">
             <div className="row ">
 
                 <div className="col-md-9">
                     <div className="row g-4">
                         {
                             singers.map(singer => <Singer
+                                key = {singer.id}
                                 handleAddToCart={handleAddToCart}
                                 singer={singer}
 

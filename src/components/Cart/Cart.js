@@ -1,5 +1,10 @@
 import React from 'react';
 import './Cart.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faLiraSign } from '@fortawesome/free-solid-svg-icons'
+
+
+const moneyIcon = <FontAwesomeIcon icon={faLiraSign} />
 
 const Cart = (props) => {
 
@@ -20,9 +25,11 @@ for(let singer of cart){
     return (
         
     <div className="card-body mt-3 border cart">
+        <h5 className="fw-bold text-center">Order Summary</h5>
+        <br />
         <h5 className="card-title">Add Singers : {singerQunatity}</h5>
-        
-         <h5 className="card-text">Total payment : {totalPayment}Taka </h5> 
+        <h5 className="card-text">Total payment : {moneyIcon}  {totalPayment} </h5>
+        <button className="btn btn place-btn p-1 fw-bold mt-2">Place Order</button> 
     </div>
     
     );
