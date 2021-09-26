@@ -7,3 +7,12 @@
 .header-title h1{
  padding: 20px;
 }
+.cut-title{
+    color: gold;
+}
+.search{
+    background:gold ;
+    color: white;
+    padding: 13px 20px;
+    margin-bottom: 2px;
+}
